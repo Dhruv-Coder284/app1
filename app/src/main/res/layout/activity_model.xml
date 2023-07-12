@@ -7,7 +7,8 @@
     android:fitsSystemWindows="false"
     tools:context=".Model"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bgcolor">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
