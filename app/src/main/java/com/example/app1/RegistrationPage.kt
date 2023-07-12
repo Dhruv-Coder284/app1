@@ -24,6 +24,7 @@ class RegistrationPage : AppCompatActivity() {
                 var password =binding.PasswordRegister.text.toString()
                 var name=binding.Name.text.toString()
                 var phone=binding.Phone.text.toString()
+                var confirmpassword = binding.confirmPassword.toString()
                 val user = hashMapOf(
                     "Name" to name,
                     "Phone" to phone,
@@ -56,7 +57,7 @@ class RegistrationPage : AppCompatActivity() {
 
             }
 
-            else{ Toast.makeText(this,"Enter the Details", Toast.LENGTH_LONG).show()}
+            else{ Toast.makeText(this,"Enter the  Correct Details", Toast.LENGTH_LONG).show()}
         }
 
     }
@@ -65,6 +66,8 @@ class RegistrationPage : AppCompatActivity() {
             && binding.Phone.text.toString().trim{it<=' '}.isNotEmpty()
             && binding.EmailRegister.text.toString().trim{it<=' '}.isNotEmpty()
             && binding.PasswordRegister.text.toString().trim{it<=' '}.isNotEmpty()
+            && binding.confirmPassword.text.toString().trim{it<=' '}.isNotEmpty()
+            && binding.confirmPassword.text.toString() == binding.PasswordRegister.text.toString()
         ) {
             return true
         }

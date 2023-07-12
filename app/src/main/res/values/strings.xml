@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">App1</string>
-    <string name="title_activity_maps">maps</string>
+    <string name="app_name" translatable="false">App1</string>
+    <string name="title_activity_maps" translatable="false">maps</string>
 </resources>

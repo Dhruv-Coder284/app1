@@ -9,6 +9,10 @@ android {
     namespace 'com.example.app1'
     compileSdk 33
 
+    packagingOptions{
+        exclude'META-INF/NOTICE.md'
+        exclude'META-INF/LICENSE.md'
+    }
     defaultConfig {
         applicationId "com.example.app1"
         minSdk 24
@@ -40,7 +44,7 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
@@ -54,6 +58,8 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.sun.mail:android-mail:1.6.6'
+    implementation 'com.sun.mail:android-activation:1.6.7'
 
     //3d Rendering from Google
     implementation 'com.google.android.filament:filament-android:1.20.0'

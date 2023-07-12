@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/bgcolor">
+    style="@style/Dark.Theme.App1"
+    >
     <Button
         android:id="@+id/Register"
         android:layout_width="0dp"
@@ -49,6 +50,7 @@
         android:elevation="2dp"
         android:ems="10"
         android:hint="Password"
+
         android:inputType="textPassword"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,6 +70,7 @@
         android:elevation="2dp"
         android:ems="10"
         android:hint="Email"
+
         android:inputType="textEmailAddress"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +91,8 @@
         app:layout_constraintEnd_toEndOf="@+id/Email"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/Email"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+ />
 
     <ImageView
         android:id="@+id/google_button"
