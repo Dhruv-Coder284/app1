@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    style="@style/Dark.Theme.App1"
-    >
+    style="@style/Base.Theme.App1">
     <Button
         android:id="@+id/Register"
         android:layout_width="0dp"
