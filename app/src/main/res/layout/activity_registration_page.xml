@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistrationPage"
-    android:background="@drawable/bgcolor">
+    style="@style/SCREEN">
 
 
     <EditText
@@ -24,7 +24,8 @@
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/EmailRegister"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/TEXT"/>
 
     <EditText
         android:id="@+id/EmailRegister"
@@ -42,7 +43,8 @@
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/PasswordRegister"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/TEXT"/>
 
     <EditText
         android:id="@+id/PasswordRegister"
@@ -50,17 +52,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/coustum_input"
         android:elevation="2dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        style="@style/TEXT"
         android:minHeight="48dp"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/confirmPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -69,8 +72,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/coustum_input"
+        style="@style/TEXT"
         android:elevation="2dp"
         android:ems="10"
         android:hint="Confirm Password"
@@ -86,11 +90,13 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="124dp"
-        android:text="Enter the details"
-        android:textColor="@android:color/holo_purple"
+        android:layout_marginBottom="68dp"
+        android:text="ENTER THE DETAILS"
+        android:textAlignment="viewStart"
+
         android:textSize="30sp"
         android:textStyle="bold"
+        style="@style/TEXT"
         app:layout_constraintBottom_toTopOf="@+id/Name"
         app:layout_constraintEnd_toEndOf="@+id/Name"
         app:layout_constraintStart_toStartOf="@+id/Name" />
@@ -102,6 +108,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
+        style="@style/TEXT"
         android:background="@drawable/coustum_input"
         android:elevation="2dp"
         android:ems="10"
@@ -117,16 +124,17 @@
     <Button
         android:id="@+id/Continue"
         android:layout_width="0dp"
+        style="@style/BUTTON"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="72dp"
         android:background="@drawable/coustum_button"
         android:text="Continue"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
