@@ -20,12 +20,13 @@ import javax.mail.internet.MimeMessage
 class LoginPage : AppCompatActivity() {
     private lateinit var binding: ActivityLoginPageBinding
     var nightMODE = false
+
     override fun onCreate(savedInstanceState: Bundle? ) {
         super.onCreate(savedInstanceState)
         binding= ActivityLoginPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.button.setOnClickListener {R.style.Base_Theme_AppCompat_Light_App1  }
         var switcher = binding.switch1
+        supportActionBar!!.title = "Welcome"
 
         var sharedPreferences = getSharedPreferences("MODE", MODE_PRIVATE)
         nightMODE = sharedPreferences.getBoolean("night", false)

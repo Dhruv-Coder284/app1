@@ -9,12 +9,12 @@
 
     <Button
         android:id="@+id/Register"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        style="@style/BUTTON"
+        android:layout_width="365dp"
+        android:layout_height="42dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/coustum_button"
         android:text="Register"
-        style="@style/BUTTON"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,15 +24,14 @@
 
     <Button
         android:id="@+id/Login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        style="@style/BUTTON"
+        android:layout_width="363dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/coustum_button"
         android:text="Login"
-        style="@style/BUTTON"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password" />
 
@@ -49,7 +48,7 @@
         android:elevation="2dp"
         android:ems="10"
         android:hint="Password"
-        style="@style/TEXT"
+
 
         android:inputType="textPassword"
         android:padding="10dp"
@@ -59,11 +58,11 @@
 
     <EditText
         android:id="@+id/Email"
+
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="50dp"
-        style="@style/TEXT"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/coustum_input"
         android:drawableLeft="@android:drawable/sym_action_email"
@@ -75,22 +74,23 @@
         android:inputType="textEmailAddress"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView"
+        style="@style/TEXT"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="84dp"
         android:gravity="center_horizontal"
-        android:text="LOGIN TO CONTINUE"
+        android:text="LOGIN"
         android:textAllCaps="false"
         android:textSize="30sp"
         android:textStyle="bold"
-        style="@style/TEXT"
         app:layout_constraintEnd_toEndOf="@+id/Email"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/Email"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -102,9 +102,10 @@
         android:src="@drawable/googleg_standard_color_18"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintHorizontal_bias="0.335"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Register" />
+        app:layout_constraintTop_toBottomOf="@+id/Register"
+        app:layout_constraintVertical_bias="0.348" />
 
     <TextView
         android:id="@+id/textView5"
@@ -122,6 +123,7 @@
 
     <TextView
         android:id="@+id/textView6"
+        style="@style/TEXT"
         android:layout_width="187dp"
         android:layout_height="39dp"
         android:text="Sign-in with Google"
@@ -129,10 +131,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
-        style="@style/TEXT"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/google_button"
         app:layout_constraintTop_toBottomOf="@+id/Register"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.392" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,8 +13,10 @@ class Model : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_model)
+        supportActionBar!!.title = "Model"
 
-         navHostFragment =
+
+        navHostFragment =
              supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         }
 

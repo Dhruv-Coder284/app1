@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.Theme.App1" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="Base.Theme.App1" parent="Theme.AppCompat.DayNight">
     </style>
     <style name="SCREEN">
         <item name="android:background">#000</item>
